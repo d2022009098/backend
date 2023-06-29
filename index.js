@@ -99,3 +99,5 @@ app.delete("/vagas/:id", (req, res) => {
     console.log(error);
   }
 });
+module.exports = app; 
+
