@@ -6,10 +6,10 @@ const config = require("./config");
 
 //Inicialização e Middlewares
 const app = express();
-app.use(function(req, res, next){
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  next()
-})
+// app.use(function(req, res, next){
+//   res.setHeader('Access-Control-Allow-Origin', '*')
+//   next()
+// })
 app.use(express.json());
 app.use(cors());
 app.use(bodyparser.json());
